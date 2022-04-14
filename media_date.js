@@ -3,9 +3,5 @@ $(document).ready(function(){
 		var mediaTitle = $(this).html();
 		var splitDash = mediaTitle.split(" - ");
 		$(this).html('<span class="media-date">' + splitDash[0] + '</span>' + splitDash[1])
-		removeDatefromLink()
 	})
-	function removeDatefromLink() {
-		$(".media-date").remove();
-	}
 })
