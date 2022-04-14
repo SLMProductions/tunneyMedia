@@ -6,9 +6,6 @@ $(document).ready(function(){
 		removeDatefromLink()
 	})
 	function removeDatefromLink() {
-		$(".views-row .views-field-title a .media-date").each(function(){
-			var mediaDate = $(this);
-			$(this).closest(".views-field-title a").before(mediaDate)
-		})
+		$(".media-date").remove();
 	}
 })
