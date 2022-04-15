@@ -4,4 +4,7 @@ $(document).ready(function(){
 		var splitDash = mediaTitle.split(" - ");
 		$(this).html(splitDash[1])
 	})
+	$(".path-media .view-photos .views-row").each(function(){
+		$(this).find(".views-field-created, .views-field-title").wrapAll('<div class="media-info">')
+	})
 })
