@@ -6,5 +6,6 @@ $(document).ready(function(){
 	})
 	$(".path-media .view-photos .views-row").each(function(){
 		$(this).find(".views-field-created, .views-field-title").wrapAll('<div class="media-info">')
+		$(".media-info .media-info").unwrap();
 	})
 })
